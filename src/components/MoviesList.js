@@ -1,6 +1,7 @@
-import React from 'react'
-import Movie from './Movie'
-import classes from './MoviesList.module.css'
+import React from 'react';
+
+import Movie from './Movie';
+import classes from './MoviesList.module.css';
 
 const MovieList = (props) => {
   return (
@@ -9,12 +10,12 @@ const MovieList = (props) => {
         <Movie
           key={movie.id}
           title={movie.title}
-          releaseDate={movie.releaseDate}
+          releaseDate={movie.release}
           openingText={movie.openingText}
         />
       ))}
     </ul>
-  )
-}
+  );
+};
 
-export default MovieList
+export default MovieList;
